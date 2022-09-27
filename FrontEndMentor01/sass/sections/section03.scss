@@ -1,0 +1,49 @@
+$colorTitles:hsl(237, 23%, 32%);
+$text: hsl(207, 13%, 34%);
+$font1:'Overpass', sans-serif;
+$font2:'Ubuntun';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display');
+.sectionThree{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.sectionThreeTitle{
+    font-family: $font1;
+    font-size: 25px;
+    color: $colorTitles;
+}
+.sectionThreeParagraph{
+    font-size: 20px;
+    color: $text;
+}
+.laptop{
+    height: 400px;   
+}
+.containerSectionThree{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+        
+@media(min-width: 1600px){
+    .containerSectionThree{
+        padding: 70px;
+        padding-right: 300px;
+    }
+}
+@media(max-width:800px){
+    .sectionThree{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+@media(max-width:520px){
+    .laptop{
+        height: 300px;
+    }
+    
+}
+

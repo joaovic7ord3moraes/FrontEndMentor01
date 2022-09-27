@@ -1,0 +1,329 @@
+$color1:hsl(353, 100%, 62%);
+$color2:hsl(13, 100%, 72%);
+$font1:'Overpass';
+$font2:'Ubuntun';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&family=Ubuntu:wght@300&display=swap');
+
+header.header{
+    background-color: $color2;
+    background-image: url('/images/bg-pattern-intro-desktop.svg');
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-position-y: -800px;
+    background-position-x: -300px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 0 0 120px;
+    
+}
+hr{
+    display: none;
+}
+.navButtons{
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90px;
+}
+#btnMobile{
+    display: none;
+}
+.navButtons{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.menuMobile{
+    position: absolute;
+    top: 95px;
+    left: 200px;
+}
+.navButton{
+    padding-left:650px;
+}
+@media(max-width:1350px){
+    .navButton{
+        padding-left:550px;
+    }
+}
+@media(max-width:1250px){
+    .navButton{
+        padding-left:400px;
+    }
+}
+@media(max-width:1080px){
+    .navButton{
+        padding-left:300px;
+    }
+}
+@media(max-width:975px){
+    .navButton{
+        padding-left:200px;
+    }
+}
+@media(max-width:870px){
+    .navButton{
+        padding-left:138px;
+    }
+}
+    
+
+#button1{
+    background-color: transparent;
+    border: none;
+    font-family: $font1;
+    color: white;
+    border-radius: 25px;
+    width: 50px;
+    padding: 8px;
+}
+#button2{
+    background-color: white;
+    border: none;
+    font-family: $font1;
+    color: $color1;
+    border-radius: 25px;
+    width: 100px;
+    padding: 8px;
+}
+menu.menuHeader{
+    display: flex;
+    height: 30px;
+    width: 40px;
+}
+
+img.hamburguer{
+    height: 35px;
+    width: 40px;
+}
+.imgMenu{
+    height: 40px;
+}
+
+.navMenu{
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 18px;
+}
+ul > li{
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+p.menuPs, a{
+    font-family: $font1;
+}
+.menuPs{
+    color: white;
+}
+.navList1{
+    display: none;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.navList2{
+    display: none;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.navList3{
+    display: none;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: darkgray;
+}
+#product{
+    cursor: pointer;
+}
+#product2{
+    cursor: pointer;
+}
+#product3{
+    cursor: pointer;
+}
+.active{
+    display: block;
+}
+.active2{
+    display: block;
+}
+.active3{
+    display: block;
+}
+section.sectionHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.titleHeader{
+    font-family: $font2;
+    font-size: 3rem;
+    color: white;
+}
+.SectionButtons{
+    display: flex;
+    gap: 0 15px;
+}
+.ButtonStart{
+    background-color: white;
+    color: $color1;
+    font-family: $font1;
+    border: none;
+    height: 35px;
+    width: 105px;
+    border-radius: 25px;
+}
+.ButtonLearn{
+    background-color: transparent;
+    border-color: white;
+    font-family: $font1;
+    border: 1px solid;
+    color: white;
+    height: 35px;
+    width: 105px;
+    border-radius: 25px;
+}
+
+
+@media(max-width:800px){
+    .titleHeader{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    section.sectionHeader{
+        gap: 10px;
+    } 
+    .navButtons{
+        background-position-x: 60px;
+        background-position-y: 0px;
+    }
+    #btnMobile{
+        display: block;
+    }
+    .navButtons{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 50px 23px 50px;
+    }
+    .menuHeader{
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+    
+    .navMenu{
+        flex-direction: column;
+    }
+    .menuPs{
+        padding: 15px;
+        text-align: center;
+        color: black;
+    }
+    .navButton{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #button1{ 
+   color: black;
+    }
+    #button2{
+        background-color: $color1;
+        color: white;
+    }
+    ul > li > a{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .menuMobile{
+        display: none;
+        border-radius: 20px;
+        margin: 5px 0 0 170px;
+        justify-content: center;
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        z-index: 20000;
+    }
+    hr{
+        display: block;
+        width: 180px;
+        margin-left: 4px;
+    }
+    .openMenu{
+        display: flex;
+    }
+}
+@media(max-width:780px){
+    .menuMobile{
+        margin: 5px 0 0 140px;
+    }
+}
+@media(max-width:750px){
+    .menuMobile{
+        margin: 5px 0 0 110px;
+    }
+}
+@media(max-width:720px){
+    .menuMobile{
+        margin: 5px 0 0 90px;
+    }
+}
+@media(max-width:700px){
+    .menuMobile{
+        margin: 5px 0 0 40px;
+    }
+}
+@media(max-width:650px){
+    .menuMobile{
+        margin: 5px 0px 0 0px;
+    }
+}
+@media(max-width:600px){
+    .menuMobile{
+        margin: 55px 0px 0 0px;
+    }
+}
+@media(max-width:580px){
+    .menuMobile{
+        position: absolute;
+        left:150px;
+    }
+}
+@media(max-width:500px){
+    .menuMobile{
+        left: 90px;
+    }
+}
+@media(max-width:430px){
+    .menuMobile{
+        left: 40px;
+    }
+}
+@media(max-width:400px){
+    .navButtons{
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+   
+}
+@media(max-width:370px){
+    .menuMobile {
+       height: 395px;
+       left: 10px;
+    }
+}
+@media(max-width:335px){
+    .menuMobile {
+        width: 220px;
+        height: 385px;
+        right: -110px;
+    }
+}

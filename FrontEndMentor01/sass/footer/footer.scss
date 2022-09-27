@@ -1,0 +1,60 @@
+$text: hsl(240, 2%, 79%);
+$font1:'Overpass';
+$font2:'Ubuntun';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&family=Ubuntu:wght@300&display=swap');
+
+.footer{
+    background-color:hsl(240, 10%, 16%);
+    height: 390px;
+    border-radius: 0 125px 0 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding: 20px;
+  
+}
+h6{
+    font-size: 18px;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerLinks{
+    font-size: 16px;
+    color: $text;
+}
+
+.blogFooter{
+    height: 50px;
+}
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+    padding-top: 29px;
+}
+@media(max-width: 515px){
+   .footer{
+    flex-direction: column;
+   }
+   .blogFooter{
+    justify-content: center;
+    padding-left: 20px;
+   }
+   .containerFooter{
+    gap: 50px;
+   }
+
+}
+@media(max-width:370px){
+    .blogFooter{
+        height: 40px;
+    }
+    .containerFooter{
+        gap: 20px;
+    }
+}

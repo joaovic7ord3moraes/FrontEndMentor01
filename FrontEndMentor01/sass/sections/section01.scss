@@ -1,0 +1,90 @@
+$colorTitles:hsl(237, 23%, 32%);
+$text: hsl(207, 13%, 34%);
+$font1:'Overpass';
+$font2:'Ubuntun';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&family=Ubuntu:wght@300&display=swap');
+
+.sectionOne{
+    height: -150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mainTitleOfSectionOne{
+    padding: 30px;
+    font-size: 30px;
+    color:$colorTitles;
+    font-family: $font1;
+}
+.GridContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.containerSectionOne{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+}
+.twoSubtitle{
+    color: $colorTitles;
+    font-family: $font1;
+}
+.paragraphTwoSubtitle{
+    font-size: 18px;
+    color:$text;
+    padding-bottom: 20px;
+    font-family: $font2;
+}
+img.ilustratorMobile{
+    display: none;
+}
+.ilustrator{
+    height: 600px;
+    padding-bottom: 30px;
+}
+
+@media(max-width:900px){
+    .ilustrator{
+        height: 550px;
+    }
+}
+
+@media(max-width:854px){
+    .ilustrator{
+        height: 500px;
+    }
+}
+@media(max-width:800px){
+    .GridContainer{
+        display: flex;
+        padding: 30px;
+        padding-bottom: 120px;
+    }
+    .ilustrator{
+        display: none;
+    }
+    img.ilustratorMobile{
+        display: block;
+        height: 300px;
+        padding: 40px;
+    }
+}
+@media(max-width:501px){
+    
+    .ilustrator{
+        height: 200px;
+    }
+    .twoSubtitle{
+        font-size: 17px;
+    }
+    .paragraphTwoSubtitle{
+        font-size: 13px;
+    }
+}
+ 
+
+
+
